@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "606250216610",
+    "project_id": "phoneauthentication-ea5b3",
+    "storage_bucket": "phoneauthentication-ea5b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606250216610:android:7e4d888470ef49bbd9bbfb",
+        "android_client_info": {
+          "package_name": "com.phone.firebase_phone_authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606250216610-fagerlkumigtto7su2l643iebld0h5er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn5j_EMxnZZD-7sFgUeLk-G5W8xNOvkTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606250216610-fagerlkumigtto7su2l643iebld0h5er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
