@@ -1,6 +1,7 @@
 package com.phone.firebase_phone_authentication
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var mauth:FirebaseAuth
     lateinit var number:EditText
     var sessionid:String=""
+    val reff:phone_otp_animation= phone_otp_animation()
+    lateinit var player:MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -30,6 +33,8 @@ class MainActivity : AppCompatActivity() {
             val phonenumber=number.text.toString()
             val verifynumber= "+91$phonenumber"
            sendverificationcode(verifynumber)
+            val intent=Intent(this,phone_otp_animation::class.java)
+            startActivity(intent)
         }
 
     }
@@ -41,9 +46,14 @@ class MainActivity : AppCompatActivity() {
             super.onCodeSent(p0, p1)
         }
         override fun onVerificationCompleted(p0: PhoneAuthCredential) {
-            val code=p0.smsCode
+           player= MediaPlayer.create(applicationContext,R.raw.sound1)
+            player.start()
             val intent:Intent=Intent(applicationContext,VerifyOtp::class.java)
             intent.putExtra("id",sessionid)
+            intent.flags=Intent.FLAG_ACTIVITY_NEW_TASK or  Intent.FLAG_ACTIVITY_CLEAR_TASK
+            // helping in clearing the activity stack as we move from the old activity to the new activity so as we press the
+            //back button our application gets closed as there are no activites present behind the current activity due to the above
+            //flag setting code.
             startActivity(intent)
         }
 

@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16893115942028986" />
-        <entry key="app/src/main/res/layout/activity_verify_otp.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/ic_rectangle_1.xml" value="0.1055" />
+        <entry key="app/src/main/res/drawable/round_edittext.xml" value="0.1325" />
+        <entry key="app/src/main/res/drawable/roundbutton.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.1591710758377425" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_otp_verified_animation.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/activity_phone_otp_animation.xml" value="0.16893115942028986" />
+        <entry key="app/src/main/res/layout/activity_verify_otp.xml" value="0.33" />
       </map>
     </option>
   </component>

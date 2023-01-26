@@ -8,26 +8,48 @@
         android:background="@color/white"
         tools:context=".MainActivity">
     <EditText
-            android:layout_width="324dp"
-            android:layout_height="72dp"
+            android:layout_width="231dp"
+            android:layout_height="59dp"
             android:inputType="number"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:hint="Please enter your phone number"
+            android:textColorHint="#b10bff"
+            android:hint="+91 99874XXX..."
+            android:textSize="22sp"
             android:layout_marginLeft="10dp"
             android:textStyle="bold|italic"
             android:ems="10"
             android:id="@+id/et1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintVertical_bias="0.444"/>
-    <Button
-            android:text="Send verification code"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintVertical_bias="0.696"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:background="@drawable/roundbutton"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
             android:layout_width="242dp"
             android:layout_height="67dp" android:id="@+id/button"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintVertical_bias="0.679"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.887"/>
+    <ImageView
+            android:layout_width="355dp"
+            android:layout_height="279dp" app:srcCompat="@drawable/phoneauth2" android:id="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.105"/>
+    <TextView
+            android:text="Enter your phone number,we will send a verification code on it via a text message"
+            android:layout_width="341dp"
+            android:layout_height="84dp" android:id="@+id/textView"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.534"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
